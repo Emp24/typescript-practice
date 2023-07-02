@@ -9,7 +9,7 @@ const CardsContextProvider = ({ children }) => {
 
   const getCards = async () => {
     const res = await getCardsAPI();
-    setCards(res?.data.slice(0, 10));
+    setCards(res?.data);
   };
 
   return (
