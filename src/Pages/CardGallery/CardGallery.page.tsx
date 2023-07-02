@@ -7,7 +7,8 @@ const CardGalleryPage = () => {
   const { cards, getCards } = useContext(CardsContext);
   useEffect(() => {
     getCards();
-  }, [getCards]);
+    //eslint-disable-next-line
+  }, []);
 
   return <CardGalleryTemplate cards={cards} />;
 };
