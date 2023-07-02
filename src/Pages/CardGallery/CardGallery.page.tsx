@@ -7,7 +7,7 @@ const CardGalleryPage = () => {
   const { cards, getCards } = useContext(CardsContext);
   useEffect(() => {
     getCards();
-  }, []);
+  }, [getCards]);
 
   return <CardGalleryTemplate cards={cards} />;
 };

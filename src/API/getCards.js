@@ -1,7 +1,8 @@
 import { collection, getDocs, getFirestore } from "firebase/firestore/lite";
 
 import app from "../firebase.js";
-import axios from "axios";
+
+// import axios from "axios";
 
 const db = getFirestore(app);
 async function getCards(db) {
